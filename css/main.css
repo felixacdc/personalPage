@@ -1,10 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
 /*
 Template Name: Multi
 Version: 1.0
 Author: ShapeBootstrap
 Author URL: http://shapebootstrap.net
 */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
 /*************************
 *******Typography******
 **************************/
@@ -304,10 +304,12 @@ ul.nostyle i {
   margin-top: 40px;
 }
 #cta2 {
-  background: #242a33 url(../images/cta2/cta2-bg.jpg) no-repeat 50% 50%;
+  background: #242a33 url(../images/cta2/04.jpg) no-repeat 50% 50%;
   background-size: cover;
-  color: #fff;
-  padding-top: 70px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
 #cta2 .btn {
   margin-top: 10px;
@@ -517,7 +519,7 @@ ul.nostyle i {
   transition: none;
 }
 #testimonial {
-  background: #333333 url(../images/testimonial/bg.jpg) no-repeat 0 0;
+  background: #333 url(../images/testimonial/bg.jpg) no-repeat 0 0;
   background-size: cover;
   padding: 100px 0;
   color: #fff;
