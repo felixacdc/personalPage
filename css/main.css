@@ -9,7 +9,6 @@ Author URL: http://shapebootstrap.net
 *******Typography******
 **************************/
 body {
-  padding-top: 100px;
   background: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -28,10 +27,10 @@ h6 {
 }
 a {
   color: #45aed6;
-  -webkit-transition: color 400ms, background-color 400ms;
-  -moz-transition: color 400ms, background-color 400ms;
-  -o-transition: color 400ms, background-color 400ms;
-  transition: color 400ms, background-color 400ms;
+  -webkit-transition: color 250ms, background-color 250ms;
+  -moz-transition: color 250ms, background-color 250ms;
+  -o-transition: color 250ms, background-color 250ms;
+  transition: color 250ms, background-color 250ms;
 }
 a:hover,
 a:focus {
@@ -154,17 +153,27 @@ ul.nostyle i {
 /*************************
 *******Header******
 **************************/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+}
 .navbar.navbar-default {
   border: 0;
-  border-radius: 0;
+  border-radius: 0 0 5px 5px;
   margin-bottom: 0;
 }
 .navbar.navbar-default .navbar-toggle {
   margin-top: 32px;
 }
 .navbar.navbar-default .navbar-brand {
-  height: auto;
-  padding: 22px 15px 21px;
+  margin-right: 30px;
+  margin-left: 20px;
+  width: 120px;
+  height: 78px;
+  background: url(../images/logo.png) no-repeat 0 50%;
 }
 @media only screen and (min-width: 768px) {
   #main-menu.navbar-default {
@@ -173,15 +182,16 @@ ul.nostyle i {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   }
   #main-menu.navbar-default .navbar-nav > li > a {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 27px 25px;
   }
   #main-menu.navbar-default .navbar-nav > li.active > a,
   #main-menu.navbar-default .navbar-nav > li.open > a,
   #main-menu.navbar-default .navbar-nav > li:hover > a {
     background: transparent;
-    padding-top: 37px;
+    padding-top: 30px;
     border-top: 3px solid #45aed6;
+    background-color: #52b6ec;
+    color: #fff;
   }
   #main-menu.navbar-default .dropdown-menu {
     padding: 0 20px;
